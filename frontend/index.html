@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Couple App ❤️</title>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+
+    </head>
+
+    <body class="bg-black text-white">
+
+        <!-- Fondo con blur y colores -->
+        <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute w-[500px] h-[500px] bg-pink-500 rounded-full blur-3xl opacity-30 top-[-100px] left-[-100px]"></div>
+        <div class="absolute w-[400px] h-[400px] bg-purple-500 rounded-full blur-3xl opacity-30 bottom-[-100px] right-[-100px]"></div>
+        </div>
+
+        <!-- Contenido -->
+        <div class="relative flex flex-col md:flex-row min-h-screen">
+
+        <!-- Lado izquierdo -->
+        <div class="flex-1 flex flex-col justify-center px-10 md:px-20">
+
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+            Tu espacio<br>
+            <span class="text-pink-400">para el amor ❤️</span>
+            </h1>
+
+            <p class="text-gray-300 mb-8 text-lg max-w-md">
+            Conectate con tu pareja, compartí momentos, mensajes y recuerdos en un solo lugar.
+            </p>
+
+            <div class="flex gap-4">
+
+            <button onclick="irLogin()" 
+            class="bg-pink-500 hover:bg-pink-600 px-6 py-3 rounded-xl font-semibold transition shadow-lg shadow-pink-500/30">
+                Iniciar sesión
+            </button>
+
+            <button onclick="irRegistro()" 
+            class="bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 px-6 py-3 rounded-xl font-semibold transition">
+                Registrarse
+            </button>
+
+            </div>
+
+        </div>
+
+        <!-- Lado derecho (glass card) -->
+        <div class="flex-1 flex items-center justify-center p-10">
+
+            <div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 w-full max-w-md shadow-2xl">
+
+            <h2 class="text-2xl font-semibold mb-4 text-center">
+                ❤️ Vive la experiencia
+            </h2>
+
+            <ul class="space-y-3 text-gray-300 text-sm">
+
+                <li>💌 Chat privado con tu pareja</li>
+                <li>📸 Guardá recuerdos juntos</li>
+                <li>📅 Contador de días especiales</li>
+                <li>🔒 Espacio solo para ustedes</li>
+
+            </ul>
+
+            </div>
+
+        </div>
+
+        </div>
+
+        <script>
+
+        function irLogin(){
+        window.location.href = "login.html";
+        }
+
+        function irRegistro(){
+        window.location.href = "register.html";
+        }
+
+    </script>
+
+    </body>
+</html>

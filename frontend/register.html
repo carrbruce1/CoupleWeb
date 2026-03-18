@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Registro ❤️</title>
+
+        <!-- Tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+    </head>
+
+    <body class="bg-black text-white flex items-center justify-center min-h-screen">
+
+        <!-- fondo animado -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute w-[500px] h-[500px] bg-pink-500 rounded-full blur-3xl opacity-30 top-[-100px] left-[-100px]"></div>
+            <div class="absolute w-[400px] h-[400px] bg-purple-500 rounded-full blur-3xl opacity-30 bottom-[-100px] right-[-100px]"></div>
+        </div>
+
+        <!-- contenedor -->
+        <div class="relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 w-[350px] shadow-2xl">
+
+            <h2 class="text-2xl font-bold mb-6 text-center">Crear cuenta ❤️</h2>
+
+        <!-- inputs -->
+        <input type="text" id="nombre" placeholder="Nombre" class="w-full mb-3 px-4 py-3 rounded-xl bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-pink-500">
+
+        <input type="email" id="email" placeholder="Email" class="w-full mb-3 px-4 py-3 rounded-xl bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-pink-500">
+
+        <input type="password" id="password" placeholder="Contraseña" class="w-full mb-4 px-4 py-3 rounded-xl bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-pink-500">
+
+        <!-- botón -->
+        <button onclick="register()"  class="w-full bg-pink-500 hover:bg-pink-600 py-3 rounded-xl font-semibold transition shadow-lg shadow-pink-500/30">
+             Registrarse
+        </button>
+
+        <!-- link -->
+        <p class="text-sm text-center mt-4 text-gray-300">
+            ¿Ya tenés cuenta?
+            <a href="login.html" class="text-pink-400 hover:underline">Iniciar sesión</a>
+        </p>
+
+        </div>
+
+        <!-- scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/ui.js"></script>
+        <script src="js/auth.js"></script>
+
+    </body>
+</html>
